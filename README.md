@@ -24,6 +24,9 @@ This will remove everything and clean up when you have finished.
 
 # Running in docker!!!! Its a new magical world
 
+
+```
+
 docker build -t braderz/ctf-website .
 
 docker network create ctf-network
@@ -32,5 +35,5 @@ docker run --net ctf-network --name ctf-mysql -p 3306:3306 -e MYSQL_ROOT_PASSWOR
 
 docker run --net ctf-network --name ctf-website -p 8080:80 -d braderz/ctf-website
 
-
+```
 
